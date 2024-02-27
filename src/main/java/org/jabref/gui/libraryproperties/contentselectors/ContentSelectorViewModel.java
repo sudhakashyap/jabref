@@ -175,6 +175,7 @@ public class ContentSelectorViewModel implements PropertiesTabViewModel {
                      .ifPresent(newKeyword -> addKeywordIfUnique(selectedField, newKeyword));
     }
 
+
     private void addKeywordIfUnique(Field field, String keywordToAdd) {
         boolean exists = fieldKeywordsMap.get(field).contains(keywordToAdd);
         if (exists) {
