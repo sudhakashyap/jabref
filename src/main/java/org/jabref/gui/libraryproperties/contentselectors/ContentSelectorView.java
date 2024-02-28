@@ -83,6 +83,7 @@ public class ContentSelectorView extends AbstractPropertiesTabView<ContentSelect
     @FXML
     private void addNewKeyword() {
         getSelectedField().ifPresent(viewModel::showInputKeywordDialog);
+
     }
 
     @FXML
